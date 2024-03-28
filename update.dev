@@ -1,9 +1,8 @@
-if not file.exists folder +'intro.mp4'
-<1>
+
 download 'https://github.com/LuanFonsecaGit/GameEngine/raw/main/intro_1.mp4' folder.add 'intro.mp4'
 print 'a'
 wait file.exists folder +'intro.mp4'
-</1>
+
 
 print 'working'
 print 'funciona poha'
