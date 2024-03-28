@@ -2,8 +2,6 @@ def _download <url> <dir> {
 download url dir
 }
 
-@_print < 'zoas' > 
-
 if not file.exists folder +'intro.mp4' {
 @_download < 'https://github.com/LuanFonsecaGit/GameEngine/raw/main/intro_1.mp4', folder +'intro.mp4' >
 wait file.exists folder +'intro.mp4'
