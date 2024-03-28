@@ -1,2 +1,1 @@
-download 'https://github.com/LuanFonsecaGit/GameEngine/raw/main/intro_1.mp4' folder.add 'intro.mp4' file.exists folder +'intro.mp4' 
-print 'a'
+download 'https://github.com/LuanFonsecaGit/GameEngine/raw/main/intro_1.mp4' folder.add 'intro.mp4' file.exists folder +'intro.mp4' print 'a'
