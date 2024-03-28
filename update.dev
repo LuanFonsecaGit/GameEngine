@@ -1,10 +1,10 @@
 if not file.exists folder +'intro.mp4' {
 download 'https://github.com/LuanFonsecaGit/GameEngine/raw/main/intro_1.mp4' folder +'intro.mp4'
-print 'preparando para fazer download'
+print.debbug 'preparando para fazer download'
 wait file.exists folder +'intro.mp4'
 }else{
-print 'arquivo existe'
+print.debbug 'arquivo existe'
 }
 
 
-print 'finish'
+print.debbug 'finish'
