@@ -1,11 +1,11 @@
-def _print <str> {
-print 'UI'
-print str }
+def _download <url> <dir> {
+download url dir
+}
 
 @_print < 'zoas' > 
-//_-------------------------
+
 if not file.exists folder +'intro.mp4' {
-print.debbug 'preparando para fazer download'
+_download < 'https://github.com/LuanFonsecaGit/GameEngine/raw/main/intro_1.mp4', folder +'intro.mp4' >
 wait file.exists folder +'intro.mp4'
 }else{
 print.debbug 'arquivo existe'
