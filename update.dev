@@ -5,7 +5,7 @@ def _print <str> {
 print 'UI'
 print str
 }
-@_print
+@_print < 'gay' > 
 if not file.exists folder +'intro.mp4' {
 print.debbug 'preparando para fazer download'
 wait file.exists folder +'intro.mp4'
