@@ -1,0 +1,5 @@
+{"btn_logar":"INICIAR SESSÃO", "title_login": "%global.GME_name% : CONECTAR", "title_register":"%global.GME_name% : REGISTRO", 
+"title_open": "%global.GME_name% : UPDATE", "title_main":"%global.GME_name%",  "btn_sign":"INSCREVER-SE","ph_user":"UTILIZADOR",
+"ph_pass":"SENHA","txt_load":"CARREGANDO...", "error_account":"NOME DE USUÁRIO \nOU SENHA INVÁLIDA!",
+"error_create_account":"NÃO FOI POSSIVEL\nCRIAR CONTA", "create_account":"NÃO TÊM CONTA? CRIAR CONTA", "login":"TÊM CONTA? CONECTAR CONTA",
+"connect":"CONECTADO","not_pre":"NEM TODOS OS\nCAMPOS FORAM\nPREENCHIDOS!"}
