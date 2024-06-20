@@ -1,23 +1,44 @@
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IP Lookup</title>
+    <title>File Listing</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        ul { list-style-type: none; }
+        li { margin: 5px 0; }
+    </style>
 </head>
 <body>
-    <h1>IP Lookup</h1>
-    <div id="ip"></div>
+    <h1>File Listing</h1>
+    <div id="content"></div>
     <script>
-        async function getUserIP() {
+        async function fetchRepoContents() {
+            const username = 'username';
+            const repo = 'file-listing';
+            const apiURL = `https://api.github.com/repos/${username}/${repo}/contents`;
+
             try {
-                const response = await fetch('https://api.ipify.org?format=json');
+                const response = await fetch(apiURL);
                 const data = await response.json();
-                document.getElementById('ip').textContent = JSON.stringify(data, null, 2);
+                displayContents(data);
             } catch (error) {
-                document.getElementById('ip').textContent = 'Error fetching IP address';
+                document.getElementById('content').textContent = 'Error fetching repository contents';
             }
         }
-        getUserIP();
+
+        function displayContents(contents) {
+            const contentDiv = document.getElementById('content');
+            const ul = document.createElement('ul');
+            
+            contents.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item.name;
+                ul.appendChild(li);
+            });
+
+            contentDiv.appendChild(ul);
+        }
+
+        fetchRepoContents();
     </script>
 </body>
-</html>
